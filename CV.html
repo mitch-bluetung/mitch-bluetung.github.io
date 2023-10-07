@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV</title>
-  </head>
-</html> 
+    <style>
+        body {
+            font-family: 'EB Garamond';
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            column-gap: 80px; /* Horizontal gap between columns */
+            row-gap: 0px; /* Vertical gap between rows */
+            max-width: 2000px;
+            padding: 40px;
+            grid-template-rows: auto auto; /* Set two rows */
+        }
+
+        .body-text {
+            border: none;
+            border-radius: 0;
+            font-family: 'EB Garamond';
+            resize: none;
+            overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
+            line-height: 1.3;
+        }
+
+        .heading {
+            border: none;
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 1.5;
+            font-family: 'EB Garamond';
+    
+        }
+
+        .light-heading {
+            border: none;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 0.5;
+            font-family: 'EB Garamond';
+            color: #999999;
+        }
+        a:link {
+          color: black;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: black;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: black;
+          background-color: transparent;
+          text-decoration: line-through;
+        }
+        
+        a:active {
+          color: black;
+          background-color: transparent;
+          text-decoration: line-through;
+        }
