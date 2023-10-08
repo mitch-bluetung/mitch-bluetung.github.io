@@ -28,7 +28,14 @@
             padding: 40px;
             grid-template-rows: auto auto; /* Set two rows */
         }
-
+        
+        /* Media query for screens with a maximum width of, for example, 768px (adjust as needed) */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* One column on mobile screens */
+            }
+        }
+        
         .body-text {
             border: none;
             border-radius: 0;
