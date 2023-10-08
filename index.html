@@ -29,11 +29,20 @@
             grid-template-rows: auto auto; /* Set two rows */
         }
         
-        /* Media query for screens with a maximum width of, for example, 768px (adjust as needed) */
+        /* Media query for screens with a maximum width of, for example, 768px (vertical phone screens) */
         @media screen and (max-width: 768px) {
             .container {
-                grid-template-columns: 1fr; /* One column on mobile screens */
-                width: 80%;
+                grid-template-columns: 1fr; /* One column on vertical phone screens */
+                width: 100%; /* Set width to 100% on vertical phone screens */
+            }
+        }
+        
+        /* Media query for screens with a width greater than vertical phone screens but smaller than laptop or monitor width */
+        @media screen and (min-width: 769px) and (max-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(3, 300px); /* Three columns on horizontal phone screens */
+                width: 100%;
+                width: auto; /* Reset width to auto on horizontal phone screens */
             }
         }
         
