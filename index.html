@@ -2,12 +2,30 @@
 <html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-    <link href='mitch-bluetung.github.io/assets/Electra LT Std Regular.otf' rel='stylesheet'>
+
+    @font-face {
+    font-family: "Electra";
+    src: url("mitch-bluetung.github.io/assets/Electra LT Std Regular.otf") format("otf");
+    }
+    @font-face {
+    font-family: "Electra";
+    src: url("mitch-bluetung.github.io/assets/ElectraLTStd-Bold.ttf") format("ttf");
+    }
+    @font-face {
+    font-family: "Electra";
+    src: url("mitch-bluetung.github.io/assets/ElectraLTStd-BoldCursive.ttf") format("ttf");
+    }
+    @font-face {
+    font-family: "Electra";
+    src: url("mitch-bluetung.github.io/assets/ElectraLTStd-Cursive.ttf") format("ttf");
+    }
+
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mitchell J.G.R.</title>
     <style>
-        body {
+       body {
             font-family: 'EB Garamond';
             font-size: 16px;
             margin: 0;
@@ -45,7 +63,7 @@
             }
         }
         
-        .body-text {
+      /*  .body-text {
             border: none;
             border-radius: 0;
             font-family: 'EB Garamond';
@@ -54,7 +72,7 @@
             width: 100%;
             box-sizing: border-box;
             line-height: 1.3;
-        }
+        } */
 
         .heading {
             border: none;
@@ -62,7 +80,6 @@
             font-weight: bold;
             line-height: 1.5;
             font-family: 'EB Garamond';
-    
         }
 
         .light-heading {
@@ -72,19 +89,6 @@
             line-height: 0.5;
             font-family: 'EB Garamond';
             color: #999999;
-        }
-        
-        .electra-font{
-            src: url("mitch-bluetung.github.io/assets/Electra LT Std Regular.otf") format('truetype');
-            font-weight: normal;
-            font-style: normal;
-            border: none;
-            border-radius: 0;
-            resize: none;
-            overflow: hidden;
-            width: 100%;
-            box-sizing: border-box;
-            line-height: 1.3;
         }
         
         a:link {
