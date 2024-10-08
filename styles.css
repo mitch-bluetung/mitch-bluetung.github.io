@@ -150,7 +150,7 @@ a:active {
 .responsive-image {
     width: 100%;            /* Make the image scale to the width of its container */
     height: auto;           /* Maintain the aspect ratio */
-    max-width: 400px;       /* Set a maximum width for larger screens */
+    max-width: 100%;       /* Set a maximum width for larger screens */
     display: block;         /* Ensure the image is treated as a block element */
     margin: 0 auto;         /* Center the image horizontally */
 }
