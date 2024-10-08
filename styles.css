@@ -46,7 +46,7 @@ body {
     grid-template-columns: 240px 405px 405px; /* First column narrower */
     column-gap: 75px; /* Gap between columns */
     row-gap: 10px; /* Gap between rows */
-    max-width: 2000px;
+    max-width: 100%;
     padding: 40px;
     grid-template-rows: auto auto; /* Set two rows */
 }
@@ -148,9 +148,11 @@ a:active {
 }
 
 .responsive-image {
-    width: 100%;            /* Make the image scale to the width of its container */
-    height: auto;           /* Maintain the aspect ratio */
-    max-width: 100%;       /* Set a maximum width for larger screens */
-    display: block;         /* Ensure the image is treated as a block element */
-    margin: 0 auto;         /* Center the image horizontally */
+    width: 100%;             /* Make the image scale to the width of its container */
+    height: auto;            /* Maintain the aspect ratio */
+    display: block;          /* Ensure the image is treated as a block element */
+    object-fit: cover;       /* Ensure the image covers its container without stretching */
+    max-width: 100%;         /* Prevent the image from exceeding the container's width */
+    margin: 0 auto;          /* Center the image horizontally */
+    box-sizing: border-box;  /* Ensure padding and borders are included in the element's width/height */
 }
