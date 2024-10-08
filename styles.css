@@ -38,7 +38,7 @@ body {
     border: none;
     border-radius: 0;
     box-sizing: border-box;
-    padding-top: 16vh; /* adjust this for where content starts */
+    padding-top: 15vh; /* adjust this for where content starts */
 }
 
 .container {
