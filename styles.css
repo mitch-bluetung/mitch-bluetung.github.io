@@ -152,7 +152,7 @@ a:active {
     height: auto;            /* Maintain the aspect ratio */
     display: block;          /* Ensure the image is treated as a block element */
     object-fit: cover;       /* Ensure the image covers its container without stretching */
-    max-width: 100%;         /* Prevent the image from exceeding the container's width */
+    max-width: 405px;         /* Prevent the image from exceeding the container's width */
     margin: 0 auto;          /* Center the image horizontally */
     box-sizing: border-box;  /* Ensure padding and borders are included in the element's width/height */
 }
